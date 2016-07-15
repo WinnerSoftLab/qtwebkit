@@ -121,7 +121,7 @@ namespace JSC {
                 traceLine = getCalculatedDisplayName(callFrame, stackFrameCallee).impl();
                 break;
             case StackFrameGlobalCode:
-                traceLine = "global code";
+                traceLine = "";
                 break;
             }
             return traceLine.isNull() ? emptyString() : traceLine;
